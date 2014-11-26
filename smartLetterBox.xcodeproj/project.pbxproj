@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		532EACFD1A2602B600498A29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EACFC1A2602B600498A29 /* main.m */; };
+		532EAD001A2602B600498A29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EACFF1A2602B600498A29 /* AppDelegate.m */; };
+		532EAD031A2602B600498A29 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD021A2602B600498A29 /* FirstViewController.m */; };
+		532EAD061A2602B600498A29 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD051A2602B600498A29 /* SecondViewController.m */; };
+		532EAD091A2602B600498A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD071A2602B600498A29 /* Main.storyboard */; };
+		532EAD0B1A2602B600498A29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD0A1A2602B600498A29 /* Images.xcassets */; };
+		532EAD0E1A2602B600498A29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD0C1A2602B600498A29 /* LaunchScreen.xib */; };
+		532EAD1A1A2602B600498A29 /* smartLetterBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD191A2602B600498A29 /* smartLetterBoxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		532EAD141A2602B600498A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 532EACEF1A2602B600498A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532EACF61A2602B600498A29;
+			remoteInfo = smartLetterBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		532EACF71A2602B600498A29 /* smartLetterBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartLetterBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		532EACFB1A2602B600498A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532EACFC1A2602B600498A29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		532EACFE1A2602B600498A29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		532EACFF1A2602B600498A29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		532EAD011A2602B600498A29 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		532EAD021A2602B600498A29 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		532EAD041A2602B600498A29 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		532EAD051A2602B600498A29 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		532EAD081A2602B600498A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		532EAD0A1A2602B600498A29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		532EAD0D1A2602B600498A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		532EAD131A2602B600498A29 /* smartLetterBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartLetterBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		532EAD181A2602B600498A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532EAD191A2602B600498A29 /* smartLetterBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smartLetterBoxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		532EACF41A2602B600498A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532EAD101A2602B600498A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		532EACEE1A2602B600498A29 = {
+			isa = PBXGroup;
+			children = (
+				532EACF91A2602B600498A29 /* smartLetterBox */,
+				532EAD161A2602B600498A29 /* smartLetterBoxTests */,
+				532EACF81A2602B600498A29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		532EACF81A2602B600498A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				532EACF71A2602B600498A29 /* smartLetterBox.app */,
+				532EAD131A2602B600498A29 /* smartLetterBoxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		532EACF91A2602B600498A29 /* smartLetterBox */ = {
+			isa = PBXGroup;
+			children = (
+				532EACFE1A2602B600498A29 /* AppDelegate.h */,
+				532EACFF1A2602B600498A29 /* AppDelegate.m */,
+				532EAD011A2602B600498A29 /* FirstViewController.h */,
+				532EAD021A2602B600498A29 /* FirstViewController.m */,
+				532EAD041A2602B600498A29 /* SecondViewController.h */,
+				532EAD051A2602B600498A29 /* SecondViewController.m */,
+				532EAD071A2602B600498A29 /* Main.storyboard */,
+				532EAD0A1A2602B600498A29 /* Images.xcassets */,
+				532EAD0C1A2602B600498A29 /* LaunchScreen.xib */,
+				532EACFA1A2602B600498A29 /* Supporting Files */,
+			);
+			path = smartLetterBox;
+			sourceTree = "<group>";
+		};
+		532EACFA1A2602B600498A29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				532EACFB1A2602B600498A29 /* Info.plist */,
+				532EACFC1A2602B600498A29 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		532EAD161A2602B600498A29 /* smartLetterBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				532EAD191A2602B600498A29 /* smartLetterBoxTests.m */,
+				532EAD171A2602B600498A29 /* Supporting Files */,
+			);
+			path = smartLetterBoxTests;
+			sourceTree = "<group>";
+		};
+		532EAD171A2602B600498A29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				532EAD181A2602B600498A29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		532EACF61A2602B600498A29 /* smartLetterBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532EAD1D1A2602B600498A29 /* Build configuration list for PBXNativeTarget "smartLetterBox" */;
+			buildPhases = (
+				532EACF31A2602B600498A29 /* Sources */,
+				532EACF41A2602B600498A29 /* Frameworks */,
+				532EACF51A2602B600498A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartLetterBox;
+			productName = smartLetterBox;
+			productReference = 532EACF71A2602B600498A29 /* smartLetterBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		532EAD121A2602B600498A29 /* smartLetterBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532EAD201A2602B600498A29 /* Build configuration list for PBXNativeTarget "smartLetterBoxTests" */;
+			buildPhases = (
+				532EAD0F1A2602B600498A29 /* Sources */,
+				532EAD101A2602B600498A29 /* Frameworks */,
+				532EAD111A2602B600498A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				532EAD151A2602B600498A29 /* PBXTargetDependency */,
+			);
+			name = smartLetterBoxTests;
+			productName = smartLetterBoxTests;
+			productReference = 532EAD131A2602B600498A29 /* smartLetterBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		532EACEF1A2602B600498A29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Markus Ineichen & Thomas Jösler";
+				TargetAttributes = {
+					532EACF61A2602B600498A29 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					532EAD121A2602B600498A29 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 532EACF61A2602B600498A29;
+					};
+				};
+			};
+			buildConfigurationList = 532EACF21A2602B600498A29 /* Build configuration list for PBXProject "smartLetterBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 532EACEE1A2602B600498A29;
+			productRefGroup = 532EACF81A2602B600498A29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				532EACF61A2602B600498A29 /* smartLetterBox */,
+				532EAD121A2602B600498A29 /* smartLetterBoxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		532EACF51A2602B600498A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532EAD091A2602B600498A29 /* Main.storyboard in Resources */,
+				532EAD0E1A2602B600498A29 /* LaunchScreen.xib in Resources */,
+				532EAD0B1A2602B600498A29 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532EAD111A2602B600498A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		532EACF31A2602B600498A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532EAD061A2602B600498A29 /* SecondViewController.m in Sources */,
+				532EAD001A2602B600498A29 /* AppDelegate.m in Sources */,
+				532EAD031A2602B600498A29 /* FirstViewController.m in Sources */,
+				532EACFD1A2602B600498A29 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		532EAD0F1A2602B600498A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532EAD1A1A2602B600498A29 /* smartLetterBoxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		532EAD151A2602B600498A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 532EACF61A2602B600498A29 /* smartLetterBox */;
+			targetProxy = 532EAD141A2602B600498A29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		532EAD071A2602B600498A29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532EAD081A2602B600498A29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		532EAD0C1A2602B600498A29 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532EAD0D1A2602B600498A29 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		532EAD1B1A2602B600498A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		532EAD1C1A2602B600498A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		532EAD1E1A2602B600498A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = smartLetterBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		532EAD1F1A2602B600498A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = smartLetterBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		532EAD211A2602B600498A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = smartLetterBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartLetterBox.app/smartLetterBox";
+			};
+			name = Debug;
+		};
+		532EAD221A2602B600498A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = smartLetterBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartLetterBox.app/smartLetterBox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		532EACF21A2602B600498A29 /* Build configuration list for PBXProject "smartLetterBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532EAD1B1A2602B600498A29 /* Debug */,
+				532EAD1C1A2602B600498A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532EAD1D1A2602B600498A29 /* Build configuration list for PBXNativeTarget "smartLetterBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532EAD1E1A2602B600498A29 /* Debug */,
+				532EAD1F1A2602B600498A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		532EAD201A2602B600498A29 /* Build configuration list for PBXNativeTarget "smartLetterBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532EAD211A2602B600498A29 /* Debug */,
+				532EAD221A2602B600498A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 532EACEF1A2602B600498A29 /* Project object */;
+}
