@@ -15,6 +15,8 @@
 		532EAD0B1A2602B600498A29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD0A1A2602B600498A29 /* Images.xcassets */; };
 		532EAD0E1A2602B600498A29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD0C1A2602B600498A29 /* LaunchScreen.xib */; };
 		532EAD1A1A2602B600498A29 /* smartLetterBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD191A2602B600498A29 /* smartLetterBoxTests.m */; };
+		BB22B12E1A26064D009CD6A0 /* BenutzerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22B12D1A26064D009CD6A0 /* BenutzerTableViewController.m */; };
+		BB22B1311A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22B1301A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		532EAD131A2602B600498A29 /* smartLetterBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartLetterBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		532EAD181A2602B600498A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532EAD191A2602B600498A29 /* smartLetterBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smartLetterBoxTests.m; sourceTree = "<group>"; };
+		BB22B12C1A26064D009CD6A0 /* BenutzerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenutzerTableViewController.h; sourceTree = "<group>"; };
+		BB22B12D1A26064D009CD6A0 /* BenutzerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenutzerTableViewController.m; sourceTree = "<group>"; };
+		BB22B12F1A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenutzerHinzufuegenViewController.h; sourceTree = "<group>"; };
+		BB22B1301A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenutzerHinzufuegenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				532EAD0A1A2602B600498A29 /* Images.xcassets */,
 				532EAD0C1A2602B600498A29 /* LaunchScreen.xib */,
 				532EACFA1A2602B600498A29 /* Supporting Files */,
+				BB22B12C1A26064D009CD6A0 /* BenutzerTableViewController.h */,
+				BB22B12D1A26064D009CD6A0 /* BenutzerTableViewController.m */,
+				BB22B12F1A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.h */,
+				BB22B1301A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m */,
 			);
 			path = smartLetterBox;
 			sourceTree = "<group>";
@@ -224,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB22B1311A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m in Sources */,
 				532EAD061A2602B600498A29 /* SecondViewController.m in Sources */,
+				BB22B12E1A26064D009CD6A0 /* BenutzerTableViewController.m in Sources */,
 				532EAD001A2602B600498A29 /* AppDelegate.m in Sources */,
 				532EAD031A2602B600498A29 /* FirstViewController.m in Sources */,
 				532EACFD1A2602B600498A29 /* main.m in Sources */,
@@ -418,6 +430,7 @@
 				532EAD1F1A2602B600498A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		532EAD201A2602B600498A29 /* Build configuration list for PBXNativeTarget "smartLetterBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				532EAD221A2602B600498A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
