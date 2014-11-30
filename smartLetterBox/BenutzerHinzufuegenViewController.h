@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BenutzerHinzufuegenViewController : UIViewController
-- (IBAction)cancelPressed:(UIBarButtonItem *)sender;
+- (IBAction)savePressed:(UIBarButtonItem *)sender;
 
 
 @end

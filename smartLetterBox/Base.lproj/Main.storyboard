@@ -120,8 +120,6 @@
         <!--Benutzer hinzufügen-->
         <scene sceneID="N37-AF-qMc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uTf-Ly-w7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Mkf-do-IhL" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="A6X-Gs-jLW" customClass="BenutzerHinzufuegenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ctq-6e-2ET"/>
@@ -143,6 +141,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTf-Ly-w7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Mkf-do-IhL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1406" y="-994"/>
         </scene>

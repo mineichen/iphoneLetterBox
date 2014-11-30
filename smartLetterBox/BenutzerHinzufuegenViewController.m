@@ -36,7 +36,7 @@
 
 
 
-- (IBAction)cancelPressed:(UIBarButtonItem *)sender {
+- (IBAction)savePressed:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
