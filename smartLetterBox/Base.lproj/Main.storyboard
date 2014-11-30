@@ -134,10 +134,14 @@
                     <navigationItem key="navigationItem" title="Benutzer hinzufügen" id="SvB-68-b9p">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Wmb-Om-Ezj">
                             <connections>
-                                <segue destination="Mkf-do-IhL" kind="unwind" unwindAction="unwindToTableView:" id="r7L-3c-rnk"/>
+                                <segue destination="Mkf-do-IhL" kind="unwind" identifier="IdentifierUnwindToTableView" unwindAction="unwindToTableView:" id="r7L-3c-rnk"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="H1n-SU-JSU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="H1n-SU-JSU">
+                            <connections>
+                                <action selector="savePressed:" destination="A6X-Gs-jLW" id="bf0-KA-Zza"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>

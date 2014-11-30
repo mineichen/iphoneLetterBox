@@ -37,6 +37,8 @@
 
 
 - (IBAction)savePressed:(UIBarButtonItem *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    // Felderüberprüfung & speichern
+    
+    [self performSegueWithIdentifier:@"IdentifierUnwindToTableView" sender:self];
 }
 @end
