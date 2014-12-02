@@ -7,7 +7,7 @@
 //
 
 #import "DataController.h"
-#import "PersonModel.h"
+
 #import "JSONModelLib.h"
 
 @implementation DataController
@@ -22,7 +22,7 @@
     return dataProvider;
 }
 
-- (void)getUserData {
+- (PersonModel*)getUserData {
     NSString *url = @"http://mineichen.ch/smartLetterbox/person.php";
     
     PersonModel* personData = [[PersonModel alloc]
@@ -30,11 +30,11 @@
                              completion:^(JSONModel *model, JSONModelError *err) {
                                     //hide the loader view
                                  
-                                                              
+                                    NSLog(@"Error: %@", err);
                                     //json fetched
                                     NSLog(@"Personen: %@", personData.persons);
  }];
-    //return [NSArray arrayWithArray:tempArray];
+    return personData;
 }
 
 - (NSArray*)getLeerungenData {

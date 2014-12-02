@@ -8,7 +8,6 @@
 
 #import "FirstViewController.h"
 #import "PNChart.h"
-#import "DataController.h"
 
 @interface FirstViewController ()
 
@@ -36,8 +35,6 @@
     
     [self.view addSubview:lineChart];
     
-    DataController *dc = [DataController sharedDataController];
-    [dc getUserData];
     
     // Do any additional setup after loading the view, typically from a nib.
 }

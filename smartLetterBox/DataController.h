@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PersonModel.h"
 
 @interface DataController : NSObject
-- (void)getUserData;
+- (PersonModel*)getUserData;
 - (NSArray*)getPosteingangData;
 - (NSArray*)getLeerungenData;
 

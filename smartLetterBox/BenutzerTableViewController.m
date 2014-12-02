@@ -8,20 +8,23 @@
 
 #import "BenutzerTableViewController.h"
 
+
 @interface BenutzerTableViewController ()
 
 @end
 
 @implementation BenutzerTableViewController
 
+-(void)viewWillAppear:(BOOL)animated {
+    DataController *dc = [DataController sharedDataController];
+    self.myPersonData = [dc getUserData];
+    [super viewWillAppear:animated];
+    [self.benutzerTableView reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (IBAction)unwindToTableView:(UIStoryboardSegue*)sender
@@ -37,26 +40,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.myPersonData.persons.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    PersonModelEntry* myPersonData = self.myPersonData.persons[indexPath.row];
+    cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@", myPersonData.name];
     return cell;
 }
-*/
+
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
