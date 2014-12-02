@@ -7,6 +7,8 @@
 //
 
 #import "DataController.h"
+#import "PersonModel.h"
+#import "JSONModelLib.h"
 
 @implementation DataController
 
@@ -20,17 +22,19 @@
     return dataProvider;
 }
 
-- (NSArray*)getUserData {
-    NSURL *url = [[NSURL alloc]initWithString:@"http://wherever.ch/hslu/iPhoneAdressData.json"];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    NSMutableArray *tempArray = [[NSMutableArray alloc]init];
-    for (NSDictionary *dict in [NSJSONSerialization JSONObjectWithData:data options:0 error:nil]) {
-        [tempArray addObject:[[NSString alloc] initWithFormat:@"%@ %@",
-                              [dict valueForKey:@"firstName"],
-                              [dict valueForKey:@"lastName"],
-                              nil]];
-    }
-    return [NSArray arrayWithArray:tempArray];
+- (void)getUserData {
+    NSString *url = @"http://mineichen.ch/smartLetterbox/person.php";
+    
+    PersonModel* personData = [[PersonModel alloc]
+                             initFromURLWithString:url
+                             completion:^(JSONModel *model, JSONModelError *err) {
+                                    //hide the loader view
+                                 
+                                                              
+                                    //json fetched
+                                    NSLog(@"Personen: %@", personData.persons);
+ }];
+    //return [NSArray arrayWithArray:tempArray];
 }
 
 - (NSArray*)getLeerungenData {

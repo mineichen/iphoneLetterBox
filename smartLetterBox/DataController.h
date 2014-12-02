@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface DataController : NSObject
-- (NSArray*)getUserData;
+- (void)getUserData;
 - (NSArray*)getPosteingangData;
 - (NSArray*)getLeerungenData;
 
