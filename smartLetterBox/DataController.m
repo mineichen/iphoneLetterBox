@@ -32,7 +32,7 @@
                                  
                                     NSLog(@"Error: %@", err);
                                     //json fetched
-                                    NSLog(@"Personen: %@", personData.persons);
+                                    NSLog(@"Personen: %@", personData.users);
  }];
     return personData;
 }

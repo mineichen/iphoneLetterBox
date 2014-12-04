@@ -46,14 +46,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return self.myPersonData.persons.count;
+    return self.myPersonData.users.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    PersonModelEntry* myPersonData = self.myPersonData.persons[indexPath.row];
+    PersonModelEntry* myPersonData = self.myPersonData.users[indexPath.row];
     cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@", myPersonData.name];
     return cell;
 }
