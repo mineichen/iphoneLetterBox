@@ -13,6 +13,6 @@
 @interface PersonModelEntry : JSONModel
 @property NSString* name;
 @property int pid;
-@property Boolean active;
+@property BOOL active;
 @property int fingerprint;
 @end

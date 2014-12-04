@@ -18,6 +18,8 @@
 		532EAD1A1A2602B600498A29 /* smartLetterBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD191A2602B600498A29 /* smartLetterBoxTests.m */; };
 		BB22B12E1A26064D009CD6A0 /* BenutzerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22B12D1A26064D009CD6A0 /* BenutzerTableViewController.m */; };
 		BB22B1311A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB22B1301A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m */; };
+		BB479A4E1A309D8300C82EDB /* lastChangeModelEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BB479A4D1A309D8300C82EDB /* lastChangeModelEntry.m */; };
+		BB479A511A309E0100C82EDB /* lastChangedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB479A501A309E0100C82EDB /* lastChangedModel.m */; };
 		BB58422B1A2E034D00F0822E /* PersonModelEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BB58422A1A2E034D00F0822E /* PersonModelEntry.m */; };
 		BB58422E1A2E0E8800F0822E /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB58422D1A2E0E8800F0822E /* PersonModel.m */; };
 		BBC2070B1A2B314E00A49AFA /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC2070A1A2B314E00A49AFA /* DataController.m */; };
@@ -55,6 +57,10 @@
 		BB22B12D1A26064D009CD6A0 /* BenutzerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenutzerTableViewController.m; sourceTree = "<group>"; };
 		BB22B12F1A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenutzerHinzufuegenViewController.h; sourceTree = "<group>"; };
 		BB22B1301A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenutzerHinzufuegenViewController.m; sourceTree = "<group>"; };
+		BB479A4C1A309D8300C82EDB /* lastChangeModelEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lastChangeModelEntry.h; sourceTree = "<group>"; };
+		BB479A4D1A309D8300C82EDB /* lastChangeModelEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lastChangeModelEntry.m; sourceTree = "<group>"; };
+		BB479A4F1A309E0100C82EDB /* lastChangedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lastChangedModel.h; sourceTree = "<group>"; };
+		BB479A501A309E0100C82EDB /* lastChangedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lastChangedModel.m; sourceTree = "<group>"; };
 		BB5842291A2E034D00F0822E /* PersonModelEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModelEntry.h; sourceTree = "<group>"; };
 		BB58422A1A2E034D00F0822E /* PersonModelEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModelEntry.m; sourceTree = "<group>"; };
 		BB58422C1A2E0E8800F0822E /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
@@ -126,6 +132,10 @@
 				BB58422A1A2E034D00F0822E /* PersonModelEntry.m */,
 				BB58422C1A2E0E8800F0822E /* PersonModel.h */,
 				BB58422D1A2E0E8800F0822E /* PersonModel.m */,
+				BB479A4C1A309D8300C82EDB /* lastChangeModelEntry.h */,
+				BB479A4D1A309D8300C82EDB /* lastChangeModelEntry.m */,
+				BB479A4F1A309E0100C82EDB /* lastChangedModel.h */,
+				BB479A501A309E0100C82EDB /* lastChangedModel.m */,
 			);
 			path = smartLetterBox;
 			sourceTree = "<group>";
@@ -312,11 +322,13 @@
 				BB22B1311A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m in Sources */,
 				532EAD061A2602B600498A29 /* SecondViewController.m in Sources */,
 				BB22B12E1A26064D009CD6A0 /* BenutzerTableViewController.m in Sources */,
+				BB479A4E1A309D8300C82EDB /* lastChangeModelEntry.m in Sources */,
 				532EAD001A2602B600498A29 /* AppDelegate.m in Sources */,
 				BBC2070B1A2B314E00A49AFA /* DataController.m in Sources */,
 				BB58422E1A2E0E8800F0822E /* PersonModel.m in Sources */,
 				532EAD031A2602B600498A29 /* FirstViewController.m in Sources */,
 				532EACFD1A2602B600498A29 /* main.m in Sources */,
+				BB479A511A309E0100C82EDB /* lastChangedModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
