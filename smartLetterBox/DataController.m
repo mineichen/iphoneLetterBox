@@ -27,12 +27,12 @@
     
     PersonModel* personData = [[PersonModel alloc]
                              initFromURLWithString:url
-                             completion:^(JSONModel *model, JSONModelError *err) {
+                             completion:^(PersonModel *model, JSONModelError *err) {
+                                 PersonModelEntry *myModel =model.users[0];
                                     //hide the loader view
-                                 
                                     NSLog(@"Error: %@", err);
                                     //json fetched
-                                    NSLog(@"Personen: %@", personData.users);
+                                    NSLog(@"Personen: %@", myModel.name);
  }];
     return personData;
 }
