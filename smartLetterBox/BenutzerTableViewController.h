@@ -12,6 +12,5 @@
 @interface BenutzerTableViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableView *benutzerTableView;
 @property (strong, nonatomic) PersonModel* myPersonData;
-
 - (IBAction)unwindToTableView:(UIStoryboardSegue*)sender;
 @end

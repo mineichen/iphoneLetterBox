@@ -26,10 +26,17 @@
                                     <navigationItem title="Posteingang" id="G4N-r7-PWE"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ynl-aP-E5S">
+                                <rect key="frame" x="0.0" y="64" width="600" height="174"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ynl-aP-E5S" secondAttribute="trailing" constant="-30" id="3Pa-OG-rPH"/>
                             <constraint firstAttribute="centerX" secondItem="RJh-EZ-ASO" secondAttribute="centerX" id="50R-bO-bRG"/>
+                            <constraint firstItem="Ynl-aP-E5S" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-30" id="qt1-tZ-Jkr"/>
+                            <constraint firstItem="Ynl-aP-E5S" firstAttribute="top" secondItem="RJh-EZ-ASO" secondAttribute="bottom" constant="10" id="vbi-MK-Zly"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Posteingang" image="first" id="acW-dT-cKf"/>
