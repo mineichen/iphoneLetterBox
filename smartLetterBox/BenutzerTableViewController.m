@@ -7,6 +7,9 @@
 //
 
 #import "BenutzerTableViewController.h"
+#import "PersonModel.h"
+#import "JSONModelLib.h"
+
 
 
 @interface BenutzerTableViewController ()
@@ -14,17 +17,20 @@
 @end
 
 @implementation BenutzerTableViewController
-
--(void)viewWillAppear:(BOOL)animated {
-    DataController *dc = [DataController sharedDataController];
-    self.myPersonData = [dc getUserData];
-    [super viewWillAppear:animated];
-    [self.benutzerTableView reloadData];
+-(void)viewDidLoad {
+    
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
+    NSString *url = @"http://mineichen.ch/smartLetterbox/person.php";
+    self.myPersonData = [[PersonModel alloc]
+        initFromURLWithString:url
+        completion:^(PersonModel *model, JSONModelError *err) {
+            [self.benutzerTableView reloadData];
+        }
+    ];
 }
 
 - (IBAction)unwindToTableView:(UIStoryboardSegue*)sender
@@ -41,8 +47,8 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 0;
-}
+    
+    return 1;}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
@@ -54,6 +60,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     PersonModelEntry* myPersonData = self.myPersonData.users[indexPath.row];
+    
     cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@", myPersonData.name];
     return cell;
 }

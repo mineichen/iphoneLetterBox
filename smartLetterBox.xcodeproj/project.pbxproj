@@ -22,7 +22,6 @@
 		BB479A511A309E0100C82EDB /* lastChangedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB479A501A309E0100C82EDB /* lastChangedModel.m */; };
 		BB58422B1A2E034D00F0822E /* PersonModelEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BB58422A1A2E034D00F0822E /* PersonModelEntry.m */; };
 		BB58422E1A2E0E8800F0822E /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB58422D1A2E0E8800F0822E /* PersonModel.m */; };
-		BBC2070B1A2B314E00A49AFA /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC2070A1A2B314E00A49AFA /* DataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +64,6 @@
 		BB58422A1A2E034D00F0822E /* PersonModelEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModelEntry.m; sourceTree = "<group>"; };
 		BB58422C1A2E0E8800F0822E /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		BB58422D1A2E0E8800F0822E /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
-		BBC207091A2B314E00A49AFA /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
-		BBC2070A1A2B314E00A49AFA /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		C4825410F5496705FD1BF21B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,8 +123,6 @@
 				BB22B12D1A26064D009CD6A0 /* BenutzerTableViewController.m */,
 				BB22B12F1A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.h */,
 				BB22B1301A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m */,
-				BBC207091A2B314E00A49AFA /* DataController.h */,
-				BBC2070A1A2B314E00A49AFA /* DataController.m */,
 				BB5842291A2E034D00F0822E /* PersonModelEntry.h */,
 				BB58422A1A2E034D00F0822E /* PersonModelEntry.m */,
 				BB58422C1A2E0E8800F0822E /* PersonModel.h */,
@@ -324,7 +319,6 @@
 				BB22B12E1A26064D009CD6A0 /* BenutzerTableViewController.m in Sources */,
 				BB479A4E1A309D8300C82EDB /* lastChangeModelEntry.m in Sources */,
 				532EAD001A2602B600498A29 /* AppDelegate.m in Sources */,
-				BBC2070B1A2B314E00A49AFA /* DataController.m in Sources */,
 				BB58422E1A2E0E8800F0822E /* PersonModel.m in Sources */,
 				532EAD031A2602B600498A29 /* FirstViewController.m in Sources */,
 				532EACFD1A2602B600498A29 /* main.m in Sources */,

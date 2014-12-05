@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataController.h"
 #import "PersonModel.h"
 
 @interface BenutzerTableViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableView *benutzerTableView;
-@property (strong, nonatomic) DataController* dc;
 @property (strong, nonatomic) PersonModel* myPersonData;
 
 - (IBAction)unwindToTableView:(UIStoryboardSegue*)sender;
