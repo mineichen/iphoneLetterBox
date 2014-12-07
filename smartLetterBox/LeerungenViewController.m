@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Markus Ineichen & Thomas Jösler. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "LeerungenViewController.h"
 
-@interface SecondViewController ()
+@interface LeerungenViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation LeerungenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

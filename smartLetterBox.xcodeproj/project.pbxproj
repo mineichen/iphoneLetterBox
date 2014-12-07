@@ -10,8 +10,8 @@
 		215539782EAD9DD6CB3FE98E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4825410F5496705FD1BF21B /* libPods.a */; };
 		532EACFD1A2602B600498A29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EACFC1A2602B600498A29 /* main.m */; };
 		532EAD001A2602B600498A29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EACFF1A2602B600498A29 /* AppDelegate.m */; };
-		532EAD031A2602B600498A29 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD021A2602B600498A29 /* FirstViewController.m */; };
-		532EAD061A2602B600498A29 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD051A2602B600498A29 /* SecondViewController.m */; };
+		532EAD031A2602B600498A29 /* PosteingangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD021A2602B600498A29 /* PosteingangViewController.m */; };
+		532EAD061A2602B600498A29 /* LeerungenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532EAD051A2602B600498A29 /* LeerungenViewController.m */; };
 		532EAD091A2602B600498A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD071A2602B600498A29 /* Main.storyboard */; };
 		532EAD0B1A2602B600498A29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD0A1A2602B600498A29 /* Images.xcassets */; };
 		532EAD0E1A2602B600498A29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532EAD0C1A2602B600498A29 /* LaunchScreen.xib */; };
@@ -41,10 +41,10 @@
 		532EACFC1A2602B600498A29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		532EACFE1A2602B600498A29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		532EACFF1A2602B600498A29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		532EAD011A2602B600498A29 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		532EAD021A2602B600498A29 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		532EAD041A2602B600498A29 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		532EAD051A2602B600498A29 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		532EAD011A2602B600498A29 /* PosteingangViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PosteingangViewController.h; sourceTree = "<group>"; };
+		532EAD021A2602B600498A29 /* PosteingangViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PosteingangViewController.m; sourceTree = "<group>"; };
+		532EAD041A2602B600498A29 /* LeerungenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeerungenViewController.h; sourceTree = "<group>"; };
+		532EAD051A2602B600498A29 /* LeerungenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeerungenViewController.m; sourceTree = "<group>"; };
 		532EAD081A2602B600498A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		532EAD0A1A2602B600498A29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		532EAD0D1A2602B600498A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -111,10 +111,10 @@
 			children = (
 				532EACFE1A2602B600498A29 /* AppDelegate.h */,
 				532EACFF1A2602B600498A29 /* AppDelegate.m */,
-				532EAD011A2602B600498A29 /* FirstViewController.h */,
-				532EAD021A2602B600498A29 /* FirstViewController.m */,
-				532EAD041A2602B600498A29 /* SecondViewController.h */,
-				532EAD051A2602B600498A29 /* SecondViewController.m */,
+				532EAD011A2602B600498A29 /* PosteingangViewController.h */,
+				532EAD021A2602B600498A29 /* PosteingangViewController.m */,
+				532EAD041A2602B600498A29 /* LeerungenViewController.h */,
+				532EAD051A2602B600498A29 /* LeerungenViewController.m */,
 				532EAD071A2602B600498A29 /* Main.storyboard */,
 				532EAD0A1A2602B600498A29 /* Images.xcassets */,
 				532EAD0C1A2602B600498A29 /* LaunchScreen.xib */,
@@ -315,12 +315,12 @@
 			files = (
 				BB58422B1A2E034D00F0822E /* PersonModelEntry.m in Sources */,
 				BB22B1311A260A7F009CD6A0 /* BenutzerHinzufuegenViewController.m in Sources */,
-				532EAD061A2602B600498A29 /* SecondViewController.m in Sources */,
+				532EAD061A2602B600498A29 /* LeerungenViewController.m in Sources */,
 				BB22B12E1A26064D009CD6A0 /* BenutzerTableViewController.m in Sources */,
 				BB479A4E1A309D8300C82EDB /* lastChangeModelEntry.m in Sources */,
 				532EAD001A2602B600498A29 /* AppDelegate.m in Sources */,
 				BB58422E1A2E0E8800F0822E /* PersonModel.m in Sources */,
-				532EAD031A2602B600498A29 /* FirstViewController.m in Sources */,
+				532EAD031A2602B600498A29 /* PosteingangViewController.m in Sources */,
 				532EACFD1A2602B600498A29 /* main.m in Sources */,
 				BB479A511A309E0100C82EDB /* lastChangedModel.m in Sources */,
 			);

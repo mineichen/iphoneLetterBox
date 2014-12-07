@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SecondViewController.h
 //  smartLetterBox
 //
 //  Created by Markus Ineichen on 26.11.14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface LeerungenViewController : UIViewController
 
 
 @end
