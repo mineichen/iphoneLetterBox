@@ -9,6 +9,7 @@
 #import "BenutzerTableViewController.h"
 #import "PersonModel.h"
 #import "JSONModelLib.h"
+#import "JSONModelArray.h"
 
 
 
@@ -17,6 +18,12 @@
 @end
 
 @implementation BenutzerTableViewController
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    self.benutzerTableView.delegate = self;
+    self.benutzerTableView.dataSource = self;
+}
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -50,6 +57,27 @@
     
     cell.textLabel.text = [[NSString alloc] initWithFormat:@"%@", myPersonData.name];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // SENDEN DES LÖSCH BEFEHLS ANS INTERNET
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!
+        [self.myPersonData.users removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // show delete swipe button on click
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+        return YES;
 }
 
 @end

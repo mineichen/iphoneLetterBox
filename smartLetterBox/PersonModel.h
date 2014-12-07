@@ -10,5 +10,5 @@
 #import "PersonModelEntry.h"
 
 @interface PersonModel : JSONModel
-@property (strong, nonatomic) NSArray<PersonModelEntry>* users;
+@property (strong, nonatomic) NSMutableArray<PersonModelEntry>* users;
 @end
