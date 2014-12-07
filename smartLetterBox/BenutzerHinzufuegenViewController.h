@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BenutzerHinzufuegenViewController : UIViewController
+@interface BenutzerHinzufuegenViewController : UIViewController <UITextFieldDelegate>
 - (IBAction)savePressed:(UIBarButtonItem *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *benutzerTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *benutzernameCheckmark;
+@property (weak, nonatomic) IBOutlet UIImageView *fingerprintCheckmark;
 
+- (IBAction)readFingerprintButtonPressed:(UIButton *)sender;
 
 @end

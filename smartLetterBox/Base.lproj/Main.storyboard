@@ -128,6 +128,40 @@
                     <view key="view" contentMode="scaleToFill" id="CJf-hC-fLW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Benutzername:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-sl-uDo">
+                                <rect key="frame" x="16" y="145" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Benutzername" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o99-zK-If4">
+                                <rect key="frame" x="144" y="145" width="177" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finterprint:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvI-md-5rx">
+                                <rect key="frame" x="16" y="199" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX3-vl-F3k">
+                                <rect key="frame" x="144" y="195" width="177" height="30"/>
+                                <state key="normal" title="Read Fingerprint">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readFingerprintButtonPressed:" destination="A6X-Gs-jLW" eventType="touchUpInside" id="RBc-72-TvK"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check_mark_green" translatesAutoresizingMaskIntoConstraints="NO" id="QdM-dK-a8w">
+                                <rect key="frame" x="334" y="147" width="28" height="26"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check_mark_green" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-WY-0nS">
+                                <rect key="frame" x="334" y="194" width="28" height="26"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
@@ -144,6 +178,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="benutzerTextField" destination="o99-zK-If4" id="U12-uh-B3G"/>
+                        <outlet property="benutzernameCheckmark" destination="QdM-dK-a8w" id="RYF-Ue-ZOG"/>
+                        <outlet property="fingerprintCheckmark" destination="A6F-WY-0nS" id="1SJ-Ny-JFz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTf-Ly-w7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Mkf-do-IhL" userLabel="Exit" sceneMemberID="exit"/>
@@ -190,6 +229,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="check_mark_green" width="7855" height="7040"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
