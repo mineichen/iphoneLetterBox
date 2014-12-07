@@ -10,5 +10,5 @@
 #import "lastChangeModelEntry.h"
 
 @interface lastChangedModel : JSONModel
-@property (strong, nonatomic) NSArray<lastChangeModelEntry>* changes;
+@property (strong, nonatomic) NSMutableArray<lastChangeModelEntry>* changes;
 @end
