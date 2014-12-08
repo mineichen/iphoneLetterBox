@@ -8,6 +8,10 @@
 
 #import "PosteingangViewController.h"
 #import "JSONModelLib.h"
+#import "lastChangedModel.h"
+#import "lastChangeModelEntry.h"
+#import "PNChart.h"
+#define CHART_ELEMENTS 10
 
 @interface PosteingangViewController ()
 
@@ -17,39 +21,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSString *url = @"http://mineichen.ch/smartLetterbox/lastChanges.php";
-    self.myChangeData = [[lastChangedModel alloc]
-                         initFromURLWithString:url
-                         completion:^(lastChangedModel *model, JSONModelError *err) {
-                             // -- TO DO: ---------------------------
-                             // check if data can be fetched correctly. JSON needs adjustment by Kusi "the JSON" Ineichen.
-                             // create LineChart and place it in the Kusi-Container.
-                             NSLog(@"%@", model.changes);
-                             NSLog(@"%@", err);
-                             
-                         }
-                         ];
-    
-    
-    self.lineChart = [[PNLineChart alloc] initWithFrame:CGRectMake(0, 135.0, SCREEN_WIDTH, 200.0)];
-    [self.lineChart setXLabels:@[@"SEP 1",@"SEP 2",@"SEP 3",@"SEP 4",@"SEP 5"]];
-    
-    NSArray * data01Array = @[@60.1, @160.1, @126.4, @262.2, @186.2];
-    PNLineChartData *data01 = [PNLineChartData new];
-    data01.color = PNDarkYellow;
-    data01.itemCount = self.lineChart.xLabels.count;
-    data01.getData = ^(NSUInteger index) {
-        CGFloat yValue = [data01Array[index] floatValue];
-        return [PNLineChartDataItem dataItemWithY:yValue];
+    NSArray* dayOfWeek = [[NSArray alloc] initWithObjects: @"Mo",@"Di",@"Mi",@"Do",@"Fr",@"Sa", @"So", nil];
+    CGRect rectangle = CGRectMake(0, 0, SCREEN_WIDTH - 20, 200.0);
+    self.barChart = [[PNBarChart alloc] initWithFrame:rectangle];
+    self.barChart.backgroundColor = [UIColor clearColor];
+    self.barChart.yLabelFormatter = ^(CGFloat yValue){
+        CGFloat yValueParsed = yValue;
+        return [NSString stringWithFormat:@"%1.f g",yValueParsed];
     };
     
-    self.lineChart.chartData = @[data01];
-    [self.lineChart strokeChart];
-    
-    [self.view addSubview:self.lineChart];
-    
+    [self.barChart setStrokeColor:PNDarkBlue];
+    // Adding gradient
+    self.barChart.barColorGradientStart = [UIColor blueColor];
+    [self.graphContainer addSubview:self.barChart];
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [[lastChangedModel alloc]
+        initFromURLWithString: @"http://mineichen.ch/smartLetterbox/lastChanges.php"
+        completion:^(lastChangedModel *models, JSONModelError *err) {
+            NSMutableArray *yValues = [[NSMutableArray alloc] init];
+            NSMutableArray *xLabels = [[NSMutableArray alloc] init];
+            
+            
+            for(int i = (int)models.changes.count-1; i>=0 && (int)yValues.count < CHART_ELEMENTS; i--) {
+                lastChangeModelEntry *model = models.changes[i];
+                if (model.pid == nil) {
+                    [yValues insertObject: [NSNumber numberWithInt: model.weightChange] atIndex:0];
+                    [xLabels insertObject: @"Labl" atIndex: 0];
+                }
+            }
+            [self.barChart setYValues:yValues];
+            [self.barChart setXLabels:xLabels];
+            
+            [self.barChart strokeChart];
+            
+            NSLog(@"DidLoad");
+        }
+    ];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

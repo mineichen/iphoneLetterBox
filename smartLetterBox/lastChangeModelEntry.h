@@ -11,9 +11,9 @@
 @protocol lastChangeModelEntry @end
 
 @interface lastChangeModelEntry : JSONModel
-@property NSString* name;
-@property int pid;
+@property NSString<Optional>* name;
+@property NSNumber<Optional>* pid;
 @property int weight;
 @property int weightChange;
-@property NSDate* date;
+@property NSString* date;
 @end

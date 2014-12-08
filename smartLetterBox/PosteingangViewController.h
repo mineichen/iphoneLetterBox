@@ -12,6 +12,7 @@
 
 @interface PosteingangViewController : UIViewController
 @property (strong, nonatomic) lastChangedModel* myChangeData;
-@property (strong, nonatomic) PNLineChart* lineChart;
+@property (strong, nonatomic) PNBarChart* barChart;
+@property (strong, nonatomic) UIView *graphContainer;
 @end
 

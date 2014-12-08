@@ -26,13 +26,11 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    NSString *url = @"http://mineichen.ch/smartLetterbox/person.php";
+
     self.myPersonData = [[PersonModel alloc]
-        initFromURLWithString:url
+        initFromURLWithString: @"http://mineichen.ch/smartLetterbox/person.php"
         completion:^(PersonModel *model, JSONModelError *err) {
             [self.benutzerTableView reloadData];
-            
         }
     ];
 }
