@@ -21,6 +21,10 @@
     [self.tabBarController.tabBar setHidden:YES];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.tabBarController.tabBar setHidden:NO]; // Tabbar wieder anzeigen wen VC verlassen wird
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
