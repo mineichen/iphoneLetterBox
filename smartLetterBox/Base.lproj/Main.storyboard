@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -44,11 +44,9 @@
                             <constraint firstItem="Ynl-aP-E5S" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="tdB-Ad-0BA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Posteingang" image="first" id="acW-dT-cKf"/>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="R2S-4G-Dcf"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="Posteingang" image="Mailbox2_Full" id="Auu-X6-y8m"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="graphContainer" destination="Ynl-aP-E5S" id="rhB-vC-1Nw"/>
                     </connections>
@@ -87,7 +85,7 @@
                             <constraint firstItem="1mg-nQ-KgJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-50" id="sne-2B-rD7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Leerungen" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Leerungen" image="Mailbox2_Empty" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,7 +203,7 @@
         <scene sceneID="VVw-xB-8HM">
             <objects>
                 <navigationController id="Y6i-xO-R3D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Benutzerverwaltung" id="gbK-TO-QcY"/>
+                    <tabBarItem key="tabBarItem" title="Benutzerverwaltung" image="user2" id="gbK-TO-QcY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ggV-tQ-biU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -241,8 +239,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Mailbox2_Empty" width="30" height="30"/>
+        <image name="Mailbox2_Full" width="30" height="30"/>
         <image name="check_mark_green" width="7855" height="7040"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="user2" width="30" height="30"/>
     </resources>
 </document>
