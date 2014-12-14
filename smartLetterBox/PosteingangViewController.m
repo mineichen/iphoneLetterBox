@@ -67,8 +67,8 @@
                     [xLabels insertObject: [weekdayFormatter stringFromDate:model.date] atIndex: 0];
                     [self addLineAtRow:detailItemCounter
                               withDate: [formatter stringFromDate: model.date]
-                                weight: [NSString stringWithFormat: @"%i g", model.weight]
-                          weightChange: [NSString stringWithFormat: @"+%i g", model.weightChange]
+                                weight: [NSString stringWithFormat: @"%i g", model.weight/10]
+                          weightChange: [NSString stringWithFormat: @"+%i g", model.weightChange/10]
                                andFont: [UIFont fontWithName:@"TrebuchetMS" size:18]
                      ];
                     detailItemCounter++;

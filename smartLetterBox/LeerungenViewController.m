@@ -71,7 +71,7 @@
                  [self addLineAtRow:detailItemCounter
                            withDate: [formatter stringFromDate: model.date]
                              weight: model.name
-                       weightChange: [NSString stringWithFormat: @"%i g", model.weightChange]
+                       weightChange: [NSString stringWithFormat: @"%i g", model.weightChange/10]
                             andFont: [UIFont fontWithName:@"TrebuchetMS" size:18]
                   ];
                  detailItemCounter++;
