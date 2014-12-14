@@ -49,11 +49,9 @@
                             <constraint firstItem="Ynl-aP-E5S" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="tdB-Ad-0BA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Posteingang" image="first" id="acW-dT-cKf"/>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="R2S-4G-Dcf"/>
-                    </toolbarItems>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="Posteingang" image="Mailbox2_Full" id="Auu-X6-y8m"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailView" destination="WXS-bU-Ioz" id="T8M-zy-xzF"/>
                         <outlet property="graphContainer" destination="Ynl-aP-E5S" id="rhB-vC-1Nw"/>
@@ -228,7 +226,7 @@
         <scene sceneID="VVw-xB-8HM">
             <objects>
                 <navigationController id="Y6i-xO-R3D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Benutzerverwaltung" id="gbK-TO-QcY"/>
+                    <tabBarItem key="tabBarItem" title="Benutzerverwaltung" image="user2" id="gbK-TO-QcY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ggV-tQ-biU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -264,8 +262,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Mailbox2_Empty" width="30" height="30"/>
+        <image name="Mailbox2_Full" width="30" height="30"/>
         <image name="check_mark_green" width="7855" height="7040"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="user2" width="30" height="30"/>
     </resources>
 </document>
