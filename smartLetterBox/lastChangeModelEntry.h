@@ -15,5 +15,5 @@
 @property NSNumber<Optional>* pid;
 @property int weight;
 @property int weightChange;
-@property NSString* date;
+@property NSDate* date;
 @end

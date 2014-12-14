@@ -3,3 +3,4 @@ platform :ios, '8.0'
 
 pod 'PNChart', '~> 0.5'
 pod 'JSONModel'
+pod 'MBProgressHUD', '~> 0.8'

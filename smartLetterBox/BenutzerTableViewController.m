@@ -28,7 +28,7 @@
     [super viewWillAppear:animated];
 
     self.myPersonData = [[PersonModel alloc]
-        initFromURLWithString: @"http://mineichen.ch/smartLetterbox/person.php"
+        initFromURLWithString: @"http://192.168.178.22:9080/user"
         completion:^(PersonModel *model, JSONModelError *err) {
             [self.benutzerTableView reloadData];
         }
@@ -36,7 +36,7 @@
 }
 
 - (IBAction)unwindToTableView:(UIStoryboardSegue*)sender {
-    
+    NSLog(@"Unwind TableView");
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -59,9 +59,9 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // !!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // SENDEN DES LÖSCH BEFEHLS ANS INTERNET
-        // !!!!!!!!!!!!!!!!!!!!!!!!!!!
+        PersonModelEntry * person = self.myPersonData.users[0];
+        [self deleteUser: person._id];
+        
         [self.myPersonData.users removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
@@ -71,6 +71,18 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
         return YES;
+}
+- (void)deleteUser: (int) userId {
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"http://192.168.178.22:9080/user/%i", userId]]];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    // Specify that it will be a POST request
+    [urlRequest setHTTPMethod: @"DELETE"];
+    
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+    {
+        NSLog(@"Done");
+    }];
 }
 
 @end

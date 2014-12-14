@@ -7,6 +7,7 @@
 //
 
 #import "BenutzerHinzufuegenViewController.h"
+#import "MBProgressHUD.h"
 
 @interface BenutzerHinzufuegenViewController ()
 
@@ -46,8 +47,8 @@
 }
 
 - (IBAction)readFingerprintButtonPressed:(UIButton *)sender {
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // STARTEN DES FINGERPRINT LESENS, YO
+    //!!!!!!!!!!!!!!!!!!!!!		!!!!!!
+    // STARTEN DES FINGERPRINT LESENS, Y	O
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!
     //CHECK OB OK
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -58,19 +59,34 @@
 - (IBAction)savePressed:(UIBarButtonItem *)sender {
     // Felderüberprüfung & speichern
     if([self.benutzerTextField hasText]) {
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // SENDEN DES SPEICHERNS ANS INTERNET
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        [self performSegueWithIdentifier:@"IdentifierUnwindToTableView" sender:self];
+        [self createUser: self.benutzerTextField.text];
+        MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.labelText = @"Finger scannen";
     } else {
         UIAlertView* infoMessage = [[UIAlertView alloc]initWithTitle:@"Fehler"
                                                              message:@"Bitte stellen sie sicher, dass alle benötigten Felder ausgefüllt sind."
                                                             delegate:nil
                                                    cancelButtonTitle:@"Schliessen"
                                                    otherButtonTitles:nil];
+        
         [infoMessage show];
     }
 }
+
+- (void)createUser: (NSString*) userName {
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: @"http://192.168.178.22:9080/user"]];
+    [urlRequest setHTTPMethod: @"POST"];
+    [urlRequest addValue: @"text/json" forHTTPHeaderField:@"Content-Type"];
+    [urlRequest setHTTPBody: [[NSString stringWithFormat:@"{\"name\": \"%@\"}", userName] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         dispatch_async(dispatch_get_main_queue(), ^{
+             [self performSegueWithIdentifier:@"IdentifierUnwindToTableView" sender:self];
+         });
+     }];
+}
+
 
 @end
 

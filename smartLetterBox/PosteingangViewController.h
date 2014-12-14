@@ -10,9 +10,10 @@
 #import "lastChangedModel.h"
 #import "PNChart.h"
 
-@interface PosteingangViewController : UIViewController
+@interface PosteingangViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) lastChangedModel* myChangeData;
 @property (strong, nonatomic) PNBarChart* barChart;
 @property (strong, nonatomic) UIView *graphContainer;
+@property (strong, nonatomic) IBOutlet UIView *detailView;
 @end
 

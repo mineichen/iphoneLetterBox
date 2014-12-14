@@ -111,10 +111,10 @@
 			children = (
 				532EACFE1A2602B600498A29 /* AppDelegate.h */,
 				532EACFF1A2602B600498A29 /* AppDelegate.m */,
-				532EAD011A2602B600498A29 /* PosteingangViewController.h */,
 				532EAD021A2602B600498A29 /* PosteingangViewController.m */,
 				532EAD041A2602B600498A29 /* LeerungenViewController.h */,
 				532EAD051A2602B600498A29 /* LeerungenViewController.m */,
+				532EAD011A2602B600498A29 /* PosteingangViewController.h */,
 				532EAD071A2602B600498A29 /* Main.storyboard */,
 				532EAD0A1A2602B600498A29 /* Images.xcassets */,
 				532EAD0C1A2602B600498A29 /* LaunchScreen.xib */,
